@@ -1,22 +1,62 @@
 * {
     font-family: 'Cormorant Garamond', serif;
+    color: blanchedalmond;
 }
 #mouseDiv {
     position:absolute;
     transform:translate(-50%,-50%);
-    height:35px;
-    width:35px;
-    border-radius:50%;
-    border:2px solid black;
+    height: 10vh;
+    width:30vw;
+    border:2px solid rgb(255, 255, 255, 0.6);
 }
-h1 {
-    background: rgba(212, 87, 114, 0.4);
+.name {
+    position:absolute;
     width: 40vw;
     height: 10vh;
     margin: 0;
-    padding-right: 0;
+    padding: 1rem;
     font-size: 80px;
     border: 3px solid rgba(214, 161, 214, 0.6);
+}
+.about-me {
+    position:absolute;
+    margin: 0;
+    width: 200px;
+    height: 70px;
+    padding: 1rem;
+    border: 3px solid rgba(185, 66, 66, 0.6);
+}
+.apps {
+    position:absolute;
+    margin: 0;
+    width: 200px;
+    height: 70px;
+    padding: 1rem;
+    border: 3px solid rgba(133, 120, 206, 0.6);
+}
+.skills {
+    position:absolute;
+    margin: 0;
+    width: 200px;
+    height: 70px;
+    padding: 1rem;
+    border: 3px solid rgba(108, 202, 104, 0.6);
+}
+.tools {
+    position:absolute;
+    margin: 0;
+    width: 200px;
+    height: 70px;
+    padding: 1rem;
+    border: 3px solid rgba(197, 170, 82, 0.6);
+}
+.contact {
+    position:absolute;
+    margin: 0;
+    width: 200px;
+    height: 70px;
+    padding: 1rem;
+    border: 3px solid rgba(98, 191, 194, 0.6);
 }
 html, body {
     max-width: 100%;
@@ -26,28 +66,124 @@ body {
     max-width: 1950px;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(172, 151, 171);
+    background-color: rgb(99, 69, 69);
 }
+
+/* Name box  */
 .x {
-  animation: x 5s linear infinite alternate;
-  display: hidden;
+    animation: x 3s linear infinite alternate;
+    display: hidden;
 }
 .y {
-  animation: y 7s linear infinite alternate;
-  background: rgba(73, 56, 146, 0.767);
+    animation: y 4s linear infinite alternate;
 }
 @keyframes x {
-  100% {
+100% {
     transform: translateX( calc(100vw - 40vw) );
-  }
+}
 }
 @keyframes y {
-  100% {
+100% {
     transform: translateY( calc(100vh - 20vh) );
-  }
+}
+}
+
+/* About Me box  */
+.x2 {
+    animation: x2 6s linear infinite alternate;
+    display: hidden;
+}
+.y2 {
+    animation: y2 7s linear infinite alternate;
+}
+@keyframes x2 {
+100% {
+    transform: translateX( calc(100vw - 200px) );
+}
+}
+@keyframes y2 {
+100% {
+    transform: translateY( calc(100vh - 70px) );
+}
+}
+
+/* Apps box*/
+.x3 {
+    animation: x3 6s linear infinite alternate;
+    display: hidden;
+}
+.y3 {
+    animation: y2 10s linear infinite alternate;
+}
+@keyframes x3 {
+100% {
+    transform: translateX( calc(100vw - 200px) );
+}
+}
+@keyframes y3 {
+100% {
+    transform: translateY( calc(100vh - 70px) );
+}
+}
+
+/* Skills box */
+.x4 {
+    animation: x4 12s linear infinite alternate;
+    display: hidden;
+}
+.y4 {
+    animation: y4 5s linear infinite alternate;
+}
+@keyframes x4 {
+100% {
+    transform: translateX( calc(100vw - 200px) );
+}
+}
+@keyframes y4 {
+100% {
+    transform: translateY( calc(100vh - 70px) );
+}
+}
+
+/* Tools box */
+.x5 {
+    animation: x5 16s linear infinite alternate;
+    display: hidden;
+}
+.y5 {
+    animation: y5 8s linear infinite alternate;
+}
+@keyframes x5 {
+100% {
+    transform: translateX( calc(100vw - 200px) );
+}
+}
+@keyframes y5 {
+100% {
+    transform: translateY( calc(100vh - 70px) );
+}
+}
+
+/* Contact box */
+.x6 {
+    animation: x6 18s linear infinite alternate;
+    display: hidden;
+}
+.y6 {
+    animation: y6 4s linear infinite alternate;
+}
+@keyframes x6 {
+100% {
+    transform: translateX( calc(100vw - 200px) );
+}
+}
+@keyframes y6 {
+100% {
+    transform: translateY( calc(100vh - 70px) );
+}
 }
 @media only screen and (max-width: 768px) {
-    h1 {
+    .name {
         width: 60vw;
         font-size: 35px;
     }
@@ -61,11 +197,11 @@ body {
     }
 }
 @media only screen and (min-width: 768px) {
-    h1 {
+    .name {
         width: 50vw;
         font-size: 50px;
     }
-      .x .y {
+    .x .y {
         height: 13vh;
     }
     @keyframes x {
@@ -75,11 +211,11 @@ body {
     }
 }
 @media only screen and (min-width: 992px) {
-    h1 {
+    .name {
         width: 45vw;
         font-size: 65px;
     }
-      .x .y {
+    .x .y {
         height: 15vh;
     }
     @keyframes x {
@@ -89,11 +225,11 @@ body {
     }
 }
 @media only screen and (min-width: 1200px) {
-    h1 {
+    .name {
         width: 40vw;
         font-size: 70px;
     }
-         .x .y {
+    .x .y {
         height: 17vh;
     }
     @keyframes x {
